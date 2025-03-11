@@ -13,6 +13,14 @@ git commit -am "Init project"
 git remote add origin <url del repositorio>
 git pull --rebase origin master
 git push origin master
+
+```
+
+## Configurar 
+
+```sh
+cp sapassword.example.env sapassword.env
+cp sqlserver.example.env sqlserver.env
 ```
 
 ## Identificacion
