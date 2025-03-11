@@ -1,28 +1,18 @@
-# Docker-MsSqlServer
+# Microsoft SQLServer con Docker
 
-> Ejemplo de Docker-compose para disponer de una DB Sql Server 
+> Boilerplate de Docker-compose para disponer de una DB Sql Server 
 
-![MS Sql Server](logo.png)
+![Microsft SQLServer](logo.png)
 
-## TL:DR
-
-> https://samuelbarrerabastidas.medium.com/ms-sql-server-con-docker-compose-2a3213266be3
-
-## Imagenes oficiales de Sql Server
-
-> https://hub.docker.com/_/microsoft-mssql-server
-
-## Repositorio Github
-
-> https://github.com/silverfox78/Docker-MsSqlServer.git
+## Comandos
 
 ```sh
-git init --initial-branch=main
+git init --initial-branch=master
 git add .
-git commit -am "Docker-Compose SqlServer - Ejemplo practico"
-git remote add origin https://github.com/silverfox78/Docker-MsSqlServer.git
-git pull --rebase origin main
-git push origin main
+git commit -am "Init project"
+git remote add origin <url del repositorio>
+git pull --rebase origin master
+git push origin master
 ```
 
 ## Identificacion
@@ -33,7 +23,7 @@ git push origin main
 | port     | 1433          |
 | dbname   | master        |
 | user     | sa            |
-| pass     | Password12345 |
+| pass     | definido por **MSSQL_SA_PASSWORD** en el archivo sapassword.env |
 
 ## Validar version docker-compose
 
@@ -43,7 +33,7 @@ docker-compose --version
 
 ## Acciones
 
-### Levantar la imagen
+### Levantar la imagen como servicio
 
 ```sh
 docker-compose up -d

@@ -1,3 +1,4 @@
-*.env
+sapassword.env
+sqlserver.env
 shared/*.bak
 !shared/.gitkeep
